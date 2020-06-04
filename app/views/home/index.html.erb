@@ -1,0 +1,28 @@
+<script>
+  $(function () {
+  var words = ['save', 'earn', 'invest', 'retirement', 'account', 'money', 'credit', 'debt', 'assets', 'loan', 'interest', 'accrual',
+ 'economy', 'sharing', 'savings', 'budget', 'capital', 'collateral', 'bond', 'market', 'value', 'index'];
+  // start a word find game
+  var gamePuzzle = wordfindgame.create(
+    words,
+    '#puzzle',
+    '#words',
+    { height: 10,
+      width:10,
+      fillBlanks: true
+    });
+  $('#solve').click( function() {
+    wordfindgame.solve(gamePuzzle, words);
+</script>
+
+<h1>Puzzle</h1>
+
+<div class="puzzleWrap">
+  <p>Word Search</p>
+  <div id='puzzle'></div>
+  <div id='words'>
+    <button id='solve'>Solve Puzzle</button>
+  </div>
+  
+</div>
+
